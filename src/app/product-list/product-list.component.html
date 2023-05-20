@@ -1,13 +1,82 @@
-<h2>Products</h2>
+<div class="card-container">
+    <mat-card *ngFor="let product of products" class="clickable-card" (click)="onCardClick(product)">
+      <mat-card-content>
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+
+  <input type="hidden" #selection>
+
+  <div class="card-container">
+    <button class="card card-small" (click)="selection.value = 'component'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>New Component</span>
+    </button>
+
+    <button class="card card-small" (click)="selection.value = 'material'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Angular Material</span>
+    </button>
+
+    <button class="card card-small" (click)="selection.value = 'pwa'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Add PWA Support</span>
+    </button>
+
+    <button class="card card-small" (click)="selection.value = 'dependency'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Add Dependency</span>
+    </button>
+
+    <button class="card card-small" (click)="selection.value = 'test'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Run and Watch Tests</span>
+    </button>
+
+    <button class="card card-small" (click)="selection.value = 'build'" tabindex="0">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Build for Production</span>
+    </button>
+  </div>
+
+ 
+
+
+  
+
+
+
+
+<!-- 
+
+    <h2>Products</h2>
 <div *ngFor="let product of products">
     <h3>
         {{ product.name }}
     </h3>
 </div>
-<mat-slide-toggle>Toggle me!</mat-slide-toggle>
 
+<h2>Products</h2> 
+<mat-card *ngFor="let product of products">
+    <mat-card-header>
+        <div mat-card-avatar></div>
+        <mat-card-title>{{ product.name }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        
+    </mat-card-content>
+    <mat-card-actions>
+        
+</mat-card>
 
-<!-- 
+<h2>Products</h2>
+
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at https://angular.io/license

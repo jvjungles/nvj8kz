@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
+import { MatCardHeader, MatCardTitle, MatCardContent, MatCardActions } from '@angular/material/card';
 
 import { products } from '../products';
 
@@ -12,6 +14,10 @@ export class ProductListComponent {
 
   share() {
     window.alert('The product has been shared!');
+  }
+  onCardClick(product: any) {
+    console.log('Card clicked:', product);
+    // Lógica adicional que você deseja executar ao clicar no card
   }
 }
 

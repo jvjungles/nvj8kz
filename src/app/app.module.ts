@@ -8,12 +8,15 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { FooterComponent } from './footer/footer.component';
+import { MatCardModule } from '@angular/material/card';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     MatSlideToggleModule,
+    MatCardModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
     ])
