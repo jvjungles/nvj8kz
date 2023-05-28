@@ -17,13 +17,7 @@ export class ProductListComponent {
   }
   onCardClick(product: any) {
     console.log('Card clicked:', product);
-    // Lógica adicional que você deseja executar ao clicar no card
+    alert(product.id + '\n' + product.name);
+
   }
 }
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/

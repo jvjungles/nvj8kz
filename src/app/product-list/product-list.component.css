@@ -1,4 +1,4 @@
-.scrollable-div {
+  .scrollable-div {
     height: 300px; /* altura fixa desejada */
     overflow: auto; /* ou 'scroll' para sempre mostrar a barra de rolagem */
   }
@@ -14,9 +14,3 @@
   .clickable-card.mat-elevation-z8:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24), 0 2px 4px rgba(0, 0, 0, 0.12);
   }
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
