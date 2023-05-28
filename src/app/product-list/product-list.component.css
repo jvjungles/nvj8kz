@@ -79,12 +79,6 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24), 0 2px 4px rgba(0, 0, 0, 0.12);
   }
 
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 16px;
-  }
-
   .card {
     all: unset;
     border-radius: 4px;
@@ -100,4 +94,9 @@
     align-items: center;
     transition: all 0.2s ease-in-out;
     line-height: 24px;
+  }
+
+  .card-item {
+    width: calc(33% - 16px); /* A largura é definida como metade do container, subtraindo o espaçamento entre os cards */
+    margin: 8px;
   }
