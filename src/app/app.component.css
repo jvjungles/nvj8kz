@@ -210,10 +210,15 @@
 
   footer {
     position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #f8f8f8;
-  padding: 20px;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px;  
+    display: flex;
+    align-items: center;
+    background-color: #395f83;
+    color: white;
+    font-weight: 600;
   }
 
   footer a {
