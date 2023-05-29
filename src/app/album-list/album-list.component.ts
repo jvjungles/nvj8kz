@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
-import { MatCardHeader, MatCardTitle, MatCardContent, MatCardActions } from '@angular/material/card';
-
 import { albuns } from '../albuns';
 
 @Component({

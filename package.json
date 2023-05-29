@@ -1,6 +1,6 @@
 {
   "name": "controle-de-selos",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Sistema de Controle - Catálogo Filatélico - Selos.",
   "license": "MIT",
   "scripts": {

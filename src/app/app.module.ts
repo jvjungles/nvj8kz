@@ -31,4 +31,4 @@ import { MatCardModule } from '@angular/material/card';
     AppComponent
   ]
 })
-export class AppModule { }
+export class AppModule {}
