@@ -6,7 +6,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
+import { AlbumListComponent } from './album-list/album-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { MatCardModule } from '@angular/material/card';
 
@@ -18,13 +18,13 @@ import { MatCardModule } from '@angular/material/card';
     MatSlideToggleModule,
     MatCardModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', component: AlbumListComponent },
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent,
+    AlbumListComponent,
     FooterComponent
   ],
   bootstrap: [
